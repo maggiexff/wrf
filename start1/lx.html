@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link href="lx.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="download/font_711163_5z98sq0100x/iconfont.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">自定义数据源</div>
+        <div class="con_left">
+            <div class="compute">选择计算方式</div>
+            <div class="compute_nav">
+                <span class="compute_circle"><input class="circle" type="radio"name="radio">NPS（净推荐值)</span>
+                <span class="compute_circle"><input class="circle" type="radio"name="radio">满意度四象限图</span>
+                <span class="compute_circle"><input class="circle" type="radio"name="radio">分维度排名图</span>
+                <span class="compute_circle"><input class="circle" type="radio"name="radio">玛奴拉</span>
+            </div>
+        </div>
+        <div class="con_right">
+            <div class="data">
+                <div class="data_name">选择数据源</div>
+                <div class="data_nav">
+                    <div class="data_input">计算类型<select  class="data1" type="text" value="Q3:请您给我们的菜品打分">
+                        <option value="Q3:请您给我们的菜品打分">Q3:请您给我们的菜品打分</option>
+                    </select></div>
+                    <div class="data_input">数据源名称<input class="data1_1"type="text" value="输入自定义数据源名称"></div>
+                    <span class="data_input">行合计标签<input class="data1_1"type="text" value="设计行合计标签"></span>
+                    <span class="data_input">列合计标签<input class="data1_1"type="text" value="设计列合计标签"></span>
+                    <span class="data_input">单位<input class="data2" type="text" value="请输入单位"></span>
+                    <span class="data_input">选择门店<select class="data3" type="text" value="选择门店">
+                        <option value="选择门店">选择门店</option>
+                    </select></span>
+                    <div class="data_input">时间维度
+                        <input class="data4" style="width: 90px;margin-right:14px;"type="text" value="开始日期">至
+                        <input class="data4" style="width: 90px;margin-left: 14px;margin-right:14px;"type="text" value="结束日期">
+                        <input class="" style="width: 220px;"type="text" value="设置日期别名">
+                        <!--<span class="iconfont icon-shanchu1" > </span>-->
+                        <i class="iconfont icon-plus-circle" style="font-size: 18px;line-height: 28px;"></i>
+                        <i class="iconfont icon-delete" style="font-size: 18px;line-height: 28px;"></i>
+                    </div>
+                    <div class="data_input">
+                        <div class="data_question">问题维度</div>
+                        <div class="data_last">
+                            <input class="" type="text" value="设置问卷组别名"><br>
+                            <input class="" type="text" value="设置问卷组别名"><br>
+                            <select class="" style="width: 115px;height: 34px;margin-right:10px;"type="text" value="请选择问卷">
+                                <option value="请选择问卷">请选择问卷</option>
+                            </select>
+                            <select class="" style="width: 115px;height: 34px;margin-right:10px;"type="text" value="请选择问题">
+                                <option value="请选择问题">请选择问题</option>
+                            </select>
+                            <input class="" style="width: 220px;"type="text" value="设置单问卷权重">
+                            <i class="iconfont icon-plus-circle" style="font-size: 18px;line-height: 28px;"></i>
+                            
+                            <select class="" style="width: 115px;height: 34px;margin-right:10px;"type="text" value="请选择问卷">
+                                <option value="请选择问卷">请选择问卷</option>
+                            </select>
+                            <select class="" style="width: 115px;height: 34px;margin-right:10px;"type="text" value="请选择问题">
+                                <option value="请选择问题">请选择问题</option>
+                            </select>
+                            <input class="" style="width: 220px;"type="text" value="设置单问卷权重">
+                            <i class="iconfont icon-plus-circle" style="font-size: 18px;line-height: 28px;"></i>
+                            <i class="iconfont icon-delete" style="font-size: 18px;line-height: 28px;"></i>
+                        </div>
+                        <div class="data_last_r">
+                            <i class="iconfont icon-plus-circle" style="font-size: 18px;line-height: 28px;"></i>
+                            <i class="iconfont icon-delete" style="font-size: 18px;line-height: 28px;"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tx">
+                <div class="tx_name">
+                    <div class="tx_li">样本数据类型</div>
+                    <div class="tx_li">小数点</div>
+                    <div class="tx_li">基数</div>
+                    <div class="tx_li">Top Box</div>
+                </div>
+                <div class="tx_nav">
+                    请选择Top Box<select  value="">
+                    <option value="Top1(10分)">Top1(10分)</option>
+                    <option value="Top2(10分)">Top2(10分)</option>
+                    <option value="Top3(10分)">Top3(10分)</option>
+                </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
