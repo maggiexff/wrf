@@ -1,0 +1,15 @@
+<view class="modal-box-diy" wx:if="{{showSelfToast}}">
+    <view class="warn-box">
+        <icon type="success_no_circle" size="60" wx:if="{{modalBoxType=='success'}}" />
+        <icon type="warn" size="26" color="#fd084a" wx:else/>
+        <view style="max-width:300rpx;margin-top:30rpx; text-align:left;">{{errorMsg}}</view>
+    </view>
+</view>
+<view class="modal-box-diy" wx:if="{{showGetUserInfo}}">
+    <view class="get-userinfo-box">
+        <view class="iconfont icon-Smile"></view>
+        <view class="fr28 c6" style="margin-top: 34rpx;">我们需要您的授权</view>
+        <view class="fr32" style="margin-top: 30rpx;color: #ff24c;">登录后才能为您提供更多的服务</view>
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="get-userinfo-btn fr26"> 去登录</button>
+    </view>
+</view>

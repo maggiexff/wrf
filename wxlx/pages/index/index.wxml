@@ -1,0 +1,27 @@
+<page>
+<view class="container">
+  <view class="userinfo" hover='true'hover-class="userinfohover">
+    <button wx:if="{{!hasUserInfo && canIUse}}"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <icon type="success" size="30"></icon>
+  <button bindtap="scrprogress">{{bttitle}}</button>
+  <progress class="mscp" percent="{{mvalue}}" show-info />
+  <scroll-view class="msc" scroll-y="true" scroll-x="true">
+  <!-- <image src="../../img/1.jpg"class='mscview'></image> -->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"        duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}"         bindchange="swiperChange" class="swiper">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="img" bindtap="swipclick" />
+      </swiper-item>
+    </block>
+  </swiper>
+  </scroll-view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+</page>

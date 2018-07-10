@@ -1,0 +1,55 @@
+.modal-box-diy {
+  top:0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background:rgba(0,0,0,0.3);
+}
+.warn-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; 
+  line-height: 20px;
+  background:rgba(0,0,0,0.8);
+  border-radius: 10rpx;
+  color: white;
+  padding: 40rpx;
+  text-align: center;
+}
+.get-userinfo-box{
+  width: 600rpx;
+  background: white;
+  text-align: center;
+  color: #ff724c;
+  padding: 42rpx 0;
+  border-radius: 30rpx;
+  margin-bottom: 20px;
+}
+.get-userinfo-box .icon-Smile{
+  font-size: 80rpx;
+ 
+  
+}
+.get-userinfo-box .get-userinfo-btn{
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 234rpx;
+  color: #ff3600;
+  border: 1px solid #ff3600;
+  background: white;
+  border-radius: 60rpx;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  
+}
+
+
